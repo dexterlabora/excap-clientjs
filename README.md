@@ -1,27 +1,43 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+
+## excap-clientjs
+# Cisco Meraki Captiive Portal API (ExCAP) - Client Side JS
+
+## Overview
+This is a simple example webpage that can process a Cisco Meraki Click Through Splash Page. Just host this file on any web server
+such as Apache and that's it!
+
+## Installation
+* Host this file on a webserver
+* Configure the Meraki wireless SSID with a Click-Through splash page authentication
+*   Dashboard --> Configure --> Splash Page: Click-through
+* Point the Meraki Splash page "Customer URL" to this file's URL
+*   Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
+* Add the domain address of the webserver to the "Walled Garden" 
+*   Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
+*   Note: You will need to use the IP address instead of the domain name or contact Meraki Support to enable Walled Garden Host Names
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, we included a small hello world application.
+## Sample URL paramater string
+```
+https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=60:e3:ac:f7:48:08%22
+```
 
-1) Open the hello-world.html file
+## Additional Resources
+http://developers.meraki.com/tagged/Splash-Pages
 
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
+### Written by 
+Cory Guynn
+2016
+www.InternetOfLEGO.com
 
 
-## Support & Documentation
+## LICENSE
+The MIT License (MIT)
+Copyright (c) 2016, Cory Guynn
 
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
-# excap-clientjs
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
