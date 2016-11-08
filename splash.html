@@ -1,6 +1,8 @@
 <html>
     <head>
        <script>
+       
+
            
        </script>
         
@@ -14,7 +16,7 @@
         
         <form id="loginForm" action="#" method="get">
             <input type="hidden" id="user_continue_url"/>
-            <input type="submit" id="login" value="Submit" onclick="login()"/>
+            <input type="submit" value="Submit" onclick="login()"/>
         </form>
         
         <hr>
@@ -26,7 +28,6 @@
     
     
     <script>
-            
             // Parse paramaters
             var base_grant_url = decodeURIComponent(GetURLParameter("base_grant_url"));
             var user_continue_url = decodeURIComponent(GetURLParameter("user_continue_url"));
@@ -41,6 +42,19 @@
             document.getElementById("clientMAC").innerHTML = client_mac;
             document.getElementById("nodeMAC").innerHTML = node_mac;
 
+            function login(){
+                // process survey
+                survey();
+
+                console.log("base_grant_url: "+base_grant_url);
+                console.log("user_continue_url: "+user_continue_url);
+                
+                // Login to WiFi
+                document.getElementById("user_continue_url").value = user_continue_url;
+                document.getElementById("loginForm").action = base_grant_url;
+                document.getElementById("loginForm").submit();
+            }
+            
             
             // Helper function to parse URL
             function GetURLParameter(sParam)
@@ -65,18 +79,7 @@
                 // send the data somewhere
             }
             
-            function login(){
-                // process survey
-                survey();
-
-                console.log("base_grant_url: "+base_grant_url);
-                console.log("user_continue_url: "+user_continue_url);
-                
-                // Login to WiFi
-                document.getElementById("user_continue_url").value = user_continue_url;
-                document.getElementById("loginForm").action = base_grant_url;
-                document.getElementById("loginForm").submit();
-            }
+            
 
         </script>
 </body>        
