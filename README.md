@@ -9,12 +9,12 @@ such as Apache and that's it!
 ## Installation
 * Host this file on a webserver
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
-*   Dashboard --> Configure --> Splash Page: Click-through
+    * Dashboard --> Configure --> Splash Page: Click-through
 * Point the Meraki Splash page "Customer URL" to this file's URL
-*   Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
+    * Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
 * Add the domain address of the webserver to the "Walled Garden" 
-*   Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
-*   Note: You will need to use the IP address instead of the domain name or contact Meraki Support to enable Walled Garden Host Names
+    * Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
+    * Note: You will need to use the IP address instead of the domain name or contact Meraki Support to enable Walled Garden Host Names
 
 
 
