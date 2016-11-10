@@ -23,6 +23,10 @@ such as Apache and that's it!
 https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=60:e3:ac:f7:48:08%22
 ```
 
+## Screenshot
+![alt screenshot](https://github.com/dexterlabora/excap-clientjs/blob/master/Meraki%20Splash%20-%20ClientJS.png)
+
+
 ## Additional Resources
 http://developers.meraki.com/tagged/Splash-Pages
 
