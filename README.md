@@ -24,7 +24,7 @@ https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.co
 ```
 
 ## Screenshot
-![alt screenshot](https://github.com/dexterlabora/excap-clientjs/blob/master/Meraki%20Splash%20-%20ClientJS.png)
+![alt screenshot](Meraki%20Splash%20-%20ClientJS.png)
 
 
 ## Additional Resources
