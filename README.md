@@ -25,7 +25,7 @@ https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.co
 ```
 
 ## Screenshot
-![alt screenshot](Meraki%20Splash%20-%20ClientJS.png)
+![alt screenshot](screenshot.png)
 
 
 ## Additional Resources
