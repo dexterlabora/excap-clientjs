@@ -1,16 +1,17 @@
 
-## excap-clientjs
+## excap-client-only
 # Cisco Meraki Captiive Portal API (ExCAP) - Client Side JS
 
 ## Overview
-This is a simple example webpage that can process a Cisco Meraki Click Through Splash Page. Just host this file on any web server
-such as Apache and that's it!
+Example Click-through Splash Page for Cisco Meraki networks.
+
+Just host this file on any web server such as Apache and that's it!
 
 ## Installation
 * Host this file on a webserver
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
     * Dashboard --> Configure --> Splash Page: Click-through
-* Point the Meraki Splash page "Customer URL" to this file's URL
+* Point the Meraki Splash page "Customer URL" to the HTML file. (https://yourserver/splash.html or splash-with-style.html)
     * Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
 * Add the domain address of the webserver to the "Walled Garden" 
     * Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
@@ -20,7 +21,7 @@ such as Apache and that's it!
 
 ## Sample URL paramater string
 ```
-https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=60:e3:ac:f7:48:08%22
+https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=60:e3:ac:f7:48:08:22
 ```
 
 ## Screenshot
