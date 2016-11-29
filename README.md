@@ -1,5 +1,5 @@
 
-## excap-client-only
+## excap-clientjs
 # Cisco Meraki Captiive Portal API (ExCAP) - Client Side JS
 
 ## Overview
