@@ -1,6 +1,6 @@
 
 ## excap-clientjs
-# Cisco Meraki Captiive Portal API (ExCAP) - Client Side JS
+# Cisco Meraki Captive Portal API (ExCAP) - Client Side JS
 
 ## Overview
 Example Click-through Splash Page for Cisco Meraki networks.
