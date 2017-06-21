@@ -3,8 +3,6 @@
 *Static HTML/JS/CSS Site for a Click-through Splash Page*
 
 
-
-
 ## Overview
 Cisco Meraki provides cloud managed WiFi with the ability to host your own "Splash Page", which is a captive portal service for authenticating users to join the network. This concept is called an External Captive Portal (ExCaP). 
 
@@ -19,7 +17,7 @@ http://localhost:5000/?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fspla
 ```
 
 ## Installation
-* Host these files on a webserver
+* Host the public directory files on a static webserver such as Apache or Firebase Hosting, or use the included NodeJS express server. 
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
     * Meraki Dashboard --> Configure --> Splash Page: Click-through
 * Add the domain address of the webserver to the "Walled Garden" 
@@ -28,7 +26,16 @@ http://localhost:5000/?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fspla
 * Point the Meraki Splash page "Customer URL" to the HTML file. `https://yourserver/`
     * Meraki Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
 
-
+* **Option 1:** Static Web Server 
+(Apache, Firebase Hosting)
+- Copy public directory to server
+* **Option 2:** NodeJS Server
+- In the root directory of the project, run 
+```
+npm install
+node server.js
+```
+- The server will host the project on port 5000.
 
 
 ## Sample URL paramater string
