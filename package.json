@@ -1,0 +1,33 @@
+{
+  "name": "excap-clientjs",
+  "version": "1.0.0",
+  "description": "Cisco Meraki Captive Portal - Static Site Demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dexterlabora/excap-clientjs.git"
+  },
+  "keywords": [
+    "Cisco",
+    "Meraki",
+    "ExCAP",
+    "splash",
+    "captive",
+    "portal",
+    "wifi"
+  ],
+  "author": "Cory Guynn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dexterlabora/excap-clientjs/issues"
+  },
+  "homepage": "https://github.com/dexterlabora/excap-clientjs#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
