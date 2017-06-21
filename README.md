@@ -25,7 +25,7 @@ http://localhost:5000/?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fspla
 * Add the domain address of the webserver to the "Walled Garden" 
     * Meraki Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
     * Note: You will need to use the IP address instead of the domain name or contact Meraki Support to enable Walled Garden Domain Names
-* Point the Meraki Splash page "Customer URL" to the HTML file. (https://yourserver/splash.html or splash-with-style.html)
+* Point the Meraki Splash page "Customer URL" to the HTML file. `https://yourserver/`
     * Meraki Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
 
 
