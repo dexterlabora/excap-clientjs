@@ -1,21 +1,33 @@
 
-## excap-clientjs
-# Cisco Meraki Captive Portal API (ExCAP) - Client Side JS
+#  Meraki Captive Portal
+*Static HTML/JS/CSS Site for a Click-through Splash Page*
+
+
+
 
 ## Overview
-Example Click-through Splash Page for Cisco Meraki networks.
+Cisco Meraki provides cloud managed WiFi with the ability to host your own "Splash Page", which is a captive portal service for authenticating users to join the network. This concept is called an External Captive Portal (ExCaP). 
 
-Just host this file on any web server such as Apache and that's it!
+Meraki provides two splash page modes, **click-through** and **sign-on**. This application will use the click-through method.
+
+Just host these files in the public directory on any web server such as Apache or Firebase Hosting, configure your Meraki SSID to use your server and that's it!
+
+### Sample URL received from Meraki to this page.
+*You can use this URL to test your application without an access point*
+```
+http://localhost:5000/?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fspeedof.me%2F&node_id=149624922840090&node_mac=88:15:44:60:1c:1a&gateway_id=149624922840090&client_ip=10.255.60.208&client_mac=f4:5c:89:9b:17:67
+```
 
 ## Installation
-* Host this file on a webserver
+* Host these files on a webserver
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
-    * Dashboard --> Configure --> Splash Page: Click-through
-* Point the Meraki Splash page "Customer URL" to the HTML file. (https://yourserver/splash.html or splash-with-style.html)
-    * Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
+    * Meraki Dashboard --> Configure --> Splash Page: Click-through
 * Add the domain address of the webserver to the "Walled Garden" 
-    * Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
-    * Note: You will need to use the IP address instead of the domain name or contact Meraki Support to enable Walled Garden Host Names
+    * Meraki Dashboard --> Configure --> Access Control --> SSID:yourSSID --> Walled Garden.
+    * Note: You will need to use the IP address instead of the domain name or contact Meraki Support to enable Walled Garden Domain Names
+* Point the Meraki Splash page "Customer URL" to the HTML file. (https://yourserver/splash.html or splash-with-style.html)
+    * Meraki Dashboard --> Configure --> Splash Page --> Custom URL: `https://yourserver.com/splash.html`
+
 
 
 
