@@ -12,12 +12,6 @@ Meraki provides two splash page modes, **click-through** and **sign-on**. This a
 
 Just host these files in the public directory on any web server such as Apache or Firebase Hosting, configure your Meraki SSID to use your server and that's it!
 
-### Sample URL received from Meraki to this page.
-*You can use this URL to test your application without an access point*
-```
-http://localhost:5000/?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fspeedof.me%2F&node_id=149624922840090&node_mac=88:15:44:60:1c:1a&gateway_id=149624922840090&client_ip=10.255.60.208&client_mac=f4:5c:89:9b:17:67
-```
-
 ## Installation
 * Host the public directory files on a static webserver such as Apache, GitHub or Firebase, or use the included NodeJS express server. 
 * Configure the Meraki wireless SSID with a Click-Through splash page authentication
@@ -42,13 +36,13 @@ node server.js
 
 ## Sample URL paramater string
 ```
-https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=60:e3:ac:f7:48:08:22
+https://yourserver/index.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fask.com%2F&node_id=149624921787028&node_mac=88:15:44:50:0a:94&gateway_id=149624921787028&client_ip=10.110.154.195&client_mac=60:e3:ac:f7:48:08:22
 ```
 
 ## Screenshot
 ![alt screenshot](screenshot.png)
 
-## Demo
+## Demo (using GitHub free hosting)
 #### Point your Custom Splash URL to:
 https://dexterlabora.github.io/excap-clientjs/public/index.html
 
