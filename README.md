@@ -10,7 +10,9 @@ Cisco Meraki provides cloud managed WiFi with the ability to host your own "Spla
 
 Meraki provides two splash page modes, **click-through** and **sign-on**. This application will use the click-through method.
 
-Just host these files in the public directory on any web server such as Apache or Firebase Hosting, configure your Meraki SSID to use your server and that's it!
+To get started just host these files in the public directory on any web server such as Apache or Firebase Hosting and configure your Meraki SSID to use your server. 
+
+Since this is just a starter application. It will authenticate the user on the wirless network but you might still need to "do something" with the submitted form data. This demo simply opens an alert box with the user's name and email address. In reality, you would modify the JavaScript code to save the form data to a database or send a message to an administrator. 
 
 ## Installation
 * Host the public directory files on a static webserver such as Apache, GitHub or Firebase, or use the included NodeJS express server. 
