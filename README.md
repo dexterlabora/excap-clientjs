@@ -2,8 +2,8 @@
 #  Meraki Captive Portal
 *Static HTML/JS/CSS Site for a Click-through Splash Page*
 
-## Demo
-https://dexterlabora.github.io/excap-clientjs/public/index.html
+
+
 
 ## Overview
 Cisco Meraki provides cloud managed WiFi with the ability to host your own "Splash Page", which is a captive portal service for authenticating users to join the network. This concept is called an External Captive Portal (ExCaP). 
@@ -47,6 +47,13 @@ https://yourserver/splash.html?base_grant_url=https%3A%2F%2Fn143.network-auth.co
 
 ## Screenshot
 ![alt screenshot](screenshot.png)
+
+## Demo
+#### Point your Custom Splash URL to:
+https://dexterlabora.github.io/excap-clientjs/public/index.html
+
+### Simple Test (with sample parameters):
+https://dexterlabora.github.io/excap-clientjs/public/index.html?base_grant_url=https%3A%2F%2Fn143.network-auth.com%2Fsplash%2Fgrant&user_continue_url=http%3A%2F%2Fspeedof.me%2F&node_id=149624922840090&node_mac=88:15:44:60:1c:1a&gateway_id=149624922840090&client_ip=10.255.60.208&client_mac=f4:5c:89:9b:17:67
 
 
 ## Additional Resources
